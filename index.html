@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+
+    <link rel="icon" href="img/calculadora.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+<main class="main-container">
+    <img src="img/logo.svg" alt="Splitter logo" class="logo">
+    <section class="doble-tarjeta-container">
+
+        <div class="tarjeta-uno">
+
+            <div class="input-group">
+                <label for="bill">Bill</label>
+                <input id="bill" type="number" placeholder="0" min="0">
+            </div>
+
+            <div class="tip-container">
+                <p class="tip-option">Select Tip %</p>
+
+                <div class="tip-buttons">
+                    <button class="botonpropina1" data-tip="5">5%</button>
+                    <button class="botonpropina2" data-tip="10">10%</button>
+                    <button class="botonpropina3" data-tip="15">15%</button>
+                    <button class="botonpropina4" data-tip="25">25%</button>
+                    <button class="botonpropina5" data-tip="50">50%</button>
+                    <input class="custom-tip" placeholder="Custom" min="0">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="people">Number of People</label>
+                <input id="people" type="number" placeholder="0" min="1">
+            </div>
+
+        </div>
+
+        <div class="tarjeta-dos">
+
+            <div class="resultados">
+                <div>
+                    <p>Tip Amount</p>
+                    <span>/ person</span>
+                </div>
+                <h2 id="tip-amount">$0.00</h2>
+            </div>
+
+            <div class="result">
+                <div>
+                    <p>Total</p>
+                    <span>/ person</span>
+                </div>
+                <h2 id="total-amount">$0.00</h2>
+            </div>
+            <button id="reset-btn" disabled>RESET</button>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
